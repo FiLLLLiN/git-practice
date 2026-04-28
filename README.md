@@ -29,3 +29,31 @@
 4. Проверьте:
 
 git --version
+
+---
+
+## 3. Работа с локальным Git
+
+### Настройка
+
+git config --global user.name "YourName"  
+git config --global user.email "your@email.com"  
+git config --list  
+
+### Основные команды
+
+git init  
+git status  
+git add .  
+git commit -m "сообщение"  
+git commit --amend -m "новое сообщение"  
+git log --oneline  
+git diff  
+
+### Работа с ветками
+
+git branch  
+git checkout -b new-branch  
+git checkout main  
+git merge new-branch  
+git branch -d new-branch  
