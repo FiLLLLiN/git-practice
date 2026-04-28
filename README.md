@@ -56,4 +56,38 @@ git branch
 git checkout -b new-branch  
 git checkout main  
 git merge new-branch  
-git branch -d new-branch  
+git branch -d new-branch 
+
+---
+
+## 4. Работа с удалённым Git и форками
+
+### Основные команды
+
+git clone <url>  
+git remote add origin <url>  
+git push -u origin main  
+git push  
+git pull  
+git fetch  
+git remote -v  
+
+### Форки
+
+1. Нажмите Fork на GitHub  
+2. Клонируйте:
+
+git clone https://github.com/USERNAME/repo.git  
+
+3. Добавьте upstream:
+
+git remote add upstream https://github.com/ORIGINAL/repo.git  
+
+4. Работа:
+
+git checkout -b fix  
+git add .  
+git commit -m "fix"  
+git push origin fix  
+
+5. Создать Pull Request   
